@@ -1,0 +1,31 @@
+/* style.css */
+
+body {
+  background-image: url('/path/to/background-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#headshot {
+  max-width: 175px;
+  border-radius: 50%;
+  /* Circular mask */
+  mask-image: radial-gradient(circle at center, transparent 50%, black 51%);
+  -webkit-mask-image: radial-gradient(circle at center, transparent 50%, black 51%);
+}
+
+.employer-logo {
+  max-width: 125px; /* Restrict width to 125 pixels */
+  border-radius: 50%;
+  /* Distinct radial gradient for employer photos */
+  mask-image: radial-gradient(circle at center, transparent 60%, black 61%);
+  -webkit-mask-image: radial-gradient(circle at center, transparent 60%, black 61%);
+}
